@@ -12,7 +12,22 @@
     </head>
 
     <body>
-        <div id="header-container"></div>
-        <div id="body-container"></div>
+        <div class="flex-container">
+            <div class="title">Etch-a-Sketch</div>
+            <div class="content">
+                <div class="board"></div>
+                <div class="buttons">
+                    <button class="black-button">Black</button>
+                    <button class="eraser-button">Eraser</button>
+                    <button class="random-button">Random</button>
+                    <button class="reset-button">Reset</button>
+                </div>
+                <div>
+                    <input id="size-input" type="text" placeholder="Size of Board" value="16">
+                    <button id="size-button">Set Size</button>
+                </div>
+            </div>
+            
+        </div>
     </body>
 </html>
