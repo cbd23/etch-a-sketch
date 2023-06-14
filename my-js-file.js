@@ -1,17 +1,17 @@
-// create a variable that activates random coloring if true
-let randomColor = false;
-
 // create a variable for each button of the SketchPad
 let blackButton = document.querySelector('.black-button');
 let eraserButton = document.querySelector('.eraser-button');
 let randomButton = document.querySelector('.random-button');
 let resetButton = document.querySelector('.reset-button');
 
-let sizeInput = document.getElementById('size-input'); //not an actual button - it is a input form
+let sizeInput = document.getElementById('size-input');
 let sizeButton = document.getElementById('size-button');
 
 // create a variable that stores user's choice when it comes to color (initial value = black)
 let brushColor = 'black';
+
+// create a variable that activates random coloring if true
+let randomColor = false;
 
 // add event listeners for each button
 blackButton.addEventListener('click', () => {
@@ -20,7 +20,7 @@ blackButton.addEventListener('click', () => {
 });
 
 eraserButton.addEventListener('click', () => {
-        brushColor = 'white';
+        brushColor = '#f8bc9b';
         randomColor = false;
 });
 
@@ -48,7 +48,7 @@ function populateBoard(size) {
 
     for (let i = 0; i < size * size; i++) {
         let square = document.createElement('div');
-        square.style.backgroundColor = 'white';
+        square.style.backgroundColor = '#f8bc9b';
         board.appendChild(square);
 
 
