@@ -13,21 +13,28 @@
 
     <body>
         <div class="flex-container">
-            <div class="title">Etch-a-Sketch</div>
+            <div class="header">
+                <div class="title">Etch-a-Sketch</div>
+            </div>
             <div class="content">
                 <div class="board"></div>
                 <div class="buttons">
-                    <button class="black-button">Black</button>
-                    <button class="eraser-button">Eraser</button>
-                    <button class="random-button">Random</button>
-                    <button class="reset-button">Reset</button>
+                    <span class="black-button button">Black</span>
+                    <span class="eraser-button button">Eraser</span>
+                    <span class="random-button button">Random</span>
+                    <span class="reset-button button">Reset</span>
                 </div>
-                <div>
-                    <input id="size-input" type="text" placeholder="Size of Board" value="16">
-                    <button id="size-button">Set Size</button>
+                <div class="input-container">
+                    <input id="size-input" class="button" type="text" placeholder="Size of the board" value="16">
+                    <button id="size-button" class="button">Set Size</button>
                 </div>
             </div>
-            
+            <div class="footer-container">
+                <div class="inside-footer">
+                    <a href="https://www.theodinproject.com"><img src="odin-icon.png" alt="The Odin Project Logo" class="odin-icon"></a>
+                    <div class="footer-text">The Odin Project made me do it.</div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
